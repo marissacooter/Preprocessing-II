@@ -58,4 +58,27 @@
       margin-bottom: 30px;
     }
   }
+
+
+    .btn {
+     .btn-mixin(white, teal, 10px);
+      display: flex;
+      width: 70%;
+      padding: 15px;
+      margin: 10px;
+      font-weight: bold;
+      font-size: 15px;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+        @media @mobile {
+          background-color: teal;
+          width: 95%;
+          flex-flow: column wrap;
+
+        }
+    }
+
+
 }// home

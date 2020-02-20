@@ -201,6 +201,9 @@ header nav a {
   color: black;
   font-weight: bolder;
 }
+@mobile {
+  color: pink;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -257,4 +260,25 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  color: white;
+  background-color: teal;
+  border-radius: 10px;
+  display: flex;
+  width: 70%;
+  padding: 15px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    background-color: teal;
+    width: 95%;
+    flex-flow: column wrap;
+  }
 }
