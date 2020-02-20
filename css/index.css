@@ -169,19 +169,37 @@ img {
   margin: 0 auto;
 }
 header {
-  border: 5px solid red;
-  background-color: yellow;
-  padding: 35px;
   display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 2px dashed gray;
 }
-.header-title {
-  border: 5px solid purple;
-  background-color: pink;
+header .logo {
+  font-family: 'Lacquer', sans-serif;
+  display: flex;
   width: 20%;
+  margin-left: 5%;
   padding: 15px;
   font-size: 30px;
-  flex-direction: row nowrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
+  align-items: center;
+}
+header nav {
+  width: 40%;
+  padding: 30px;
+  margin: 15px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav a {
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
 .footer {
   width: 100%;

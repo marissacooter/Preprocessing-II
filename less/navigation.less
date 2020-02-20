@@ -1,20 +1,39 @@
 // Navigation Styles here
 
 header {
-    border: 5px solid red;
-    background-color: yellow;
-    padding: 35px;
     display: flex;
-}
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 2px dashed gray;
 
-.header-title {
-    // FONT FAMILY NOT WORKING COME BACK LATER
-    font-family: font-family: 'Lacquer', sans-serif;
-    border: 5px solid purple;
-    background-color: pink;
-    width: 20%;
-    padding: 15px;
-    font-size: 30px;
-    flex-direction: row nowrap;
-    justify-content: flex-start;
+    .logo{
+        font-family: 'Lacquer', sans-serif;
+        display: flex;
+        width: 20%;
+        margin-left: 5%;
+        padding: 15px;
+        font-size: 30px;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav {
+        width: 40%;
+        padding: 30px;
+        margin: 15px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+            a {
+                font-weight: bold;
+                font-size: 15px;
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+            }
+    }
 }
